@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import CartPop from "./CartPop";
+import { useEffect } from "react";
 
 const Head = styled.div`
   max-width: 100%;
@@ -45,6 +48,11 @@ const NavMenu = styled.div`
 `;
 
 const Nav = () => {
+  const [cartState, setCartState] = useState(false);
+  const handleCartState = () => {
+    setCartState(!cartState);
+  };
+
   return (
     <>
       {" "}
@@ -60,9 +68,10 @@ const Nav = () => {
         </Link>
         <NavMenu>
           <Link to='/shop'>Shop</Link>
-          <Link to='/cart'>Cart</Link>
+          <p onClick={handleCartState}>Cart</p>
         </NavMenu>
       </NavContainer>
+      <CartPop state={cartState}></CartPop>
     </>
   );
 };

@@ -7,6 +7,7 @@ const Container = styled.div`
   display: flex;
 `;
 
+
 const Cart = () => {
   const cartItems = useSelector((state) => state.cartItems);
   const cartLength = cartItems.length;

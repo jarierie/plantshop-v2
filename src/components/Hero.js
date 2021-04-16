@@ -13,6 +13,7 @@ const HeroContainer = styled.div`
   margin-top: 20px;
   background: url(${hero});
   background-size: cover;
+  background-position: center;
   a {
     text-decoration: none;
     color: black;
