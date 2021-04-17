@@ -15,7 +15,7 @@ export const itemList = [
   {
     id: 1,
     name: "Cactus",
-    price: "50 pesos",
+    price: "99 pesos",
     stock: 2,
     imageUrl: plant1,
     type: "maliit",
@@ -39,7 +39,7 @@ export const itemList = [
   {
     id: 4,
     name: "Mayana",
-    price: "50 pesos",
+    price: "20 pesos",
     stock: 2,
     imageUrl: plant4,
     type: "maliit",
